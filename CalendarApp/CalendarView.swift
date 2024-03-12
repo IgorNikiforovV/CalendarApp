@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CalendarView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -16,9 +16,13 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onAppear {
+            print(Date.capitalizedFirstLettersOfWeekdays)
+            print(Date.fullMonthNames)
+        }
     }
 }
 
 #Preview {
-    ContentView()
+    CalendarView()
 }
