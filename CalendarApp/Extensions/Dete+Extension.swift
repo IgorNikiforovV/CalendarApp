@@ -54,4 +54,19 @@ extension Date {
         let numberFromPreviousMonth = startOfMonthWeekday - 1
         return Calendar.current.date(byAdding: .day, value: -numberFromPreviousMonth, to: startOfMonth)!
     }
+
+    var calendarDisplayDays: [Date] {
+        var days: [Date] = []
+        // Current month days
+        for dayOffset in 0..<numberOfDaysOfMonth {
+            let newDay = Calendar.current.date(byAdding: .day, value: dayOffset, to: startOfMonth)
+            days.append(newDay!)
+        }
+        // Previous month days
+        for dayOffset in 0..<startOfPreviousMonth.numberOfDaysOfMonth {
+            let newDay = Calendar.current.date(byAdding: .day, value: dayOffset, to: startOfPreviousMonth)
+            days.append(newDay!)
+        }
+        return days.filter { $0 >= sundayBeforeStart && $0 <= endOfMonth }.sorted(by: <)
+    }
 }

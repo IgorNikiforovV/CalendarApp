@@ -48,9 +48,10 @@ struct CalendarView: View {
         }
         .padding()
         .onAppear {
-            print("startOfMonth ", Date().startOfMonth)
-            print("endOfMonth ", Date().endOfMonth)
-            print("endOfMonth1 ", Date().endOfMonth1)
+            days = date.calendarDisplayDays
+        }
+        .onChange(of: date) {
+            days = date.calendarDisplayDays
         }
     }
 }
