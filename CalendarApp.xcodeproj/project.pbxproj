@@ -12,6 +12,9 @@
 		AC6A60F42BA0272300942F60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6A60F32BA0272300942F60 /* Assets.xcassets */; };
 		AC6A60F72BA0272300942F60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6A60F62BA0272300942F60 /* Preview Assets.xcassets */; };
 		AC6A60FF2BA02A2C00942F60 /* Dete+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A60FE2BA02A2C00942F60 /* Dete+Extension.swift */; };
+		ACE101862BA81EA700FA704C /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE101852BA81EA700FA704C /* Activity.swift */; };
+		ACE101882BA81F0400FA704C /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE101872BA81F0400FA704C /* Workout.swift */; };
+		ACE1018A2BA81F4F00FA704C /* ActivitySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE101892BA81F4F00FA704C /* ActivitySymbol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		AC6A60F32BA0272300942F60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC6A60F62BA0272300942F60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC6A60FE2BA02A2C00942F60 /* Dete+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dete+Extension.swift"; sourceTree = "<group>"; };
+		ACE101852BA81EA700FA704C /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		ACE101872BA81F0400FA704C /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		ACE101892BA81F4F00FA704C /* ActivitySymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySymbol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,7 @@
 		AC6A60EE2BA0272200942F60 /* CalendarApp */ = {
 			isa = PBXGroup;
 			children = (
+				ACE101842BA81E5700FA704C /* Models */,
 				AC6A60FD2BA02A1B00942F60 /* Extensions */,
 				AC6A60EF2BA0272200942F60 /* CalendarAppApp.swift */,
 				AC6A60F12BA0272200942F60 /* CalendarView.swift */,
@@ -76,6 +83,16 @@
 				AC6A60FE2BA02A2C00942F60 /* Dete+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ACE101842BA81E5700FA704C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACE101852BA81EA700FA704C /* Activity.swift */,
+				ACE101872BA81F0400FA704C /* Workout.swift */,
+				ACE101892BA81F4F00FA704C /* ActivitySymbol.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +167,9 @@
 			files = (
 				AC6A60F22BA0272200942F60 /* CalendarView.swift in Sources */,
 				AC6A60F02BA0272200942F60 /* CalendarAppApp.swift in Sources */,
+				ACE101862BA81EA700FA704C /* Activity.swift in Sources */,
+				ACE101882BA81F0400FA704C /* Workout.swift in Sources */,
+				ACE1018A2BA81F4F00FA704C /* ActivitySymbol.swift in Sources */,
 				AC6A60FF2BA02A2C00942F60 /* Dete+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
