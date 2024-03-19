@@ -15,6 +15,10 @@
 		ACE101862BA81EA700FA704C /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE101852BA81EA700FA704C /* Activity.swift */; };
 		ACE101882BA81F0400FA704C /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE101872BA81F0400FA704C /* Workout.swift */; };
 		ACE1018A2BA81F4F00FA704C /* ActivitySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE101892BA81F4F00FA704C /* ActivitySymbol.swift */; };
+		ACE101912BA9638B00FA704C /* StartTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE101902BA9638B00FA704C /* StartTab.swift */; };
+		ACE101942BA9641100FA704C /* ActivityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE101932BA9641100FA704C /* ActivityListView.swift */; };
+		ACE101962BA966AF00FA704C /* ModalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE101952BA966AF00FA704C /* ModalType.swift */; };
+		ACE101982BA9688800FA704C /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE101972BA9688800FA704C /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		ACE101852BA81EA700FA704C /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		ACE101872BA81F0400FA704C /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		ACE101892BA81F4F00FA704C /* ActivitySymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySymbol.swift; sourceTree = "<group>"; };
+		ACE101902BA9638B00FA704C /* StartTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTab.swift; sourceTree = "<group>"; };
+		ACE101932BA9641100FA704C /* ActivityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListView.swift; sourceTree = "<group>"; };
+		ACE101952BA966AF00FA704C /* ModalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalType.swift; sourceTree = "<group>"; };
+		ACE101972BA9688800FA704C /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,7 @@
 		AC6A60EE2BA0272200942F60 /* CalendarApp */ = {
 			isa = PBXGroup;
 			children = (
+				ACE1018F2BA9637B00FA704C /* Views */,
 				ACE101842BA81E5700FA704C /* Models */,
 				AC6A60FD2BA02A1B00942F60 /* Extensions */,
 				AC6A60EF2BA0272200942F60 /* CalendarAppApp.swift */,
@@ -81,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				AC6A60FE2BA02A2C00942F60 /* Dete+Extension.swift */,
+				ACE101972BA9688800FA704C /* Color+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -91,8 +101,26 @@
 				ACE101852BA81EA700FA704C /* Activity.swift */,
 				ACE101872BA81F0400FA704C /* Workout.swift */,
 				ACE101892BA81F4F00FA704C /* ActivitySymbol.swift */,
+				ACE101952BA966AF00FA704C /* ModalType.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		ACE1018F2BA9637B00FA704C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACE101922BA963FC00FA704C /* Acivity Views */,
+				ACE101902BA9638B00FA704C /* StartTab.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ACE101922BA963FC00FA704C /* Acivity Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACE101932BA9641100FA704C /* ActivityListView.swift */,
+			);
+			path = "Acivity Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,10 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE101962BA966AF00FA704C /* ModalType.swift in Sources */,
+				ACE101982BA9688800FA704C /* Color+Extension.swift in Sources */,
 				AC6A60F22BA0272200942F60 /* CalendarView.swift in Sources */,
+				ACE101912BA9638B00FA704C /* StartTab.swift in Sources */,
 				AC6A60F02BA0272200942F60 /* CalendarAppApp.swift in Sources */,
 				ACE101862BA81EA700FA704C /* Activity.swift in Sources */,
 				ACE101882BA81F0400FA704C /* Workout.swift in Sources */,
+				ACE101942BA9641100FA704C /* ActivityListView.swift in Sources */,
 				ACE1018A2BA81F4F00FA704C /* ActivitySymbol.swift in Sources */,
 				AC6A60FF2BA02A2C00942F60 /* Dete+Extension.swift in Sources */,
 			);
