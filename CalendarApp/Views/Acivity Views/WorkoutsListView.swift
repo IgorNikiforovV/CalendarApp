@@ -35,14 +35,42 @@ struct WorkoutsListView: View {
                     }
                     .swipeActions(edge: .trailing) {
                         Button(role: .destructive) {
-                            if let index = activity.workouts.firstIndex(where: { $0.id = workout.id
-                            }) {
+                            if let index = activity.workouts
+                                .firstIndex(where: { $0.id == workout.id }) {
                                 activity.workouts.remove(at: index)
                             }
                         } label: {
                             Label("Delete", systemImage: "trash")
                         }
                     }
+                    .swipeActions(edge: .leading) {
+                        Button {
+                            if let index = activity.workouts
+                                .firstIndex(where: { $0.id == workout.id }) {
+                                modelType = .updateWorkout(activity.workouts[index])
+                            }
+                        } label: {
+                            Label("Edit", systemImage: "pencil")
+                        }
+                    }
+                }
+                .listStyle(.plain)
+            }
+        }
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("\(Image(systemName: activity.icon)) \(activity.name)")
+                    .font(.title)
+                    .foregroundStyle(Color(hex: activity.hexColor)!)
+            }
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    modelType = .newWorkout(activity)
+                } label: {
+                    Image(systemName: "plus.circle.fill")
+                }
+                .sheet(item: $modelType) { sheet in
+                    sheet.presentationDetents([.height(300)])
                 }
             }
         }

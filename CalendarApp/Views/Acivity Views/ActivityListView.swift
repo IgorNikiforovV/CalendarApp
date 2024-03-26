@@ -65,7 +65,7 @@ struct ActivityListView: View {
                 }
             }
             .navigationDestination(for: Activity.self) { activity in
-                //WorkoutsListView(activity: activity)
+                WorkoutsListView(activity: activity)
             }
         }
     }
