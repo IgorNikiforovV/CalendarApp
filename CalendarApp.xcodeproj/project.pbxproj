@@ -19,6 +19,7 @@
 		ACE101942BA9641100FA704C /* ActivityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE101932BA9641100FA704C /* ActivityListView.swift */; };
 		ACE101962BA966AF00FA704C /* ModalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE101952BA966AF00FA704C /* ModalType.swift */; };
 		ACE101982BA9688800FA704C /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE101972BA9688800FA704C /* Color+Extension.swift */; };
+		ACE101A62BAABBBA00FA704C /* WorkoutsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE101A52BAABBBA00FA704C /* WorkoutsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		ACE101932BA9641100FA704C /* ActivityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListView.swift; sourceTree = "<group>"; };
 		ACE101952BA966AF00FA704C /* ModalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalType.swift; sourceTree = "<group>"; };
 		ACE101972BA9688800FA704C /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		ACE101A52BAABBBA00FA704C /* WorkoutsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				ACE101932BA9641100FA704C /* ActivityListView.swift */,
+				ACE101A52BAABBBA00FA704C /* WorkoutsListView.swift */,
 			);
 			path = "Acivity Views";
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE101A62BAABBBA00FA704C /* WorkoutsListView.swift in Sources */,
 				ACE101962BA966AF00FA704C /* ModalType.swift in Sources */,
 				ACE101982BA9688800FA704C /* Color+Extension.swift in Sources */,
 				AC6A60F22BA0272200942F60 /* CalendarView.swift in Sources */,

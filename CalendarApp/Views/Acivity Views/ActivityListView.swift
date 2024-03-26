@@ -18,7 +18,7 @@ struct ActivityListView: View {
         NavigationStack(path: $path) {
             Group {
                 if activities.isEmpty {
-//                    ContentUnavailableView("Create your first Activity by tapping on the \(Image(systemName: "plus.circle.fill")) button at the top.", image: "launchScreen")
+                    ContentUnavailableView("Create your first Activity by tapping on the \(Image(systemName: "plus.circle.fill")) button at the top.", image: "launchScreen")
                 } else {
                     List(activities) { activity in
                         NavigationLink(value: activity) {
@@ -42,8 +42,30 @@ struct ActivityListView: View {
                                 Label("Delete", systemImage: "trash")
                             }
                         }
+                        .swipeActions {
+                            Button(role: .destructive) {
+                                modelType = .updateActivity(activity)
+                            } label: {
+                                Label("Edit", systemImage: "pencil")
+                            }
+                        }
                     }
+                    .listStyle(.plain)
                 }
+            }
+            .navigationTitle("Activities")
+            .toolbar {
+                Button {
+                    modelType = .newActivity
+                } label: {
+                    Image(systemName: "plus.circle.fill")
+                }
+                .sheet(item: $modelType) { sheet in
+                    sheet.presentationDetents([.height(450)])
+                }
+            }
+            .navigationDestination(for: Activity.self) { activity in
+                //WorkoutsListView(activity: activity)
             }
         }
     }
