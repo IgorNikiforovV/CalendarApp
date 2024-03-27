@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC19A8D52BB3ED7B009C46B0 /* ActivityFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A8D42BB3ED7B009C46B0 /* ActivityFormModel.swift */; };
+		AC19A8D72BB3EF2F009C46B0 /* ActivityFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A8D62BB3EF2F009C46B0 /* ActivityFormView.swift */; };
 		AC6A60F02BA0272200942F60 /* CalendarAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A60EF2BA0272200942F60 /* CalendarAppApp.swift */; };
 		AC6A60F22BA0272200942F60 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A60F12BA0272200942F60 /* CalendarView.swift */; };
 		AC6A60F42BA0272300942F60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6A60F32BA0272300942F60 /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC19A8D42BB3ED7B009C46B0 /* ActivityFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFormModel.swift; sourceTree = "<group>"; };
+		AC19A8D62BB3EF2F009C46B0 /* ActivityFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFormView.swift; sourceTree = "<group>"; };
 		AC6A60EC2BA0272200942F60 /* CalendarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6A60EF2BA0272200942F60 /* CalendarAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarAppApp.swift; sourceTree = "<group>"; };
 		AC6A60F12BA0272200942F60 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 		ACE101842BA81E5700FA704C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AC19A8D42BB3ED7B009C46B0 /* ActivityFormModel.swift */,
 				ACE101852BA81EA700FA704C /* Activity.swift */,
 				ACE101872BA81F0400FA704C /* Workout.swift */,
 				ACE101892BA81F4F00FA704C /* ActivitySymbol.swift */,
@@ -122,6 +127,7 @@
 			children = (
 				ACE101932BA9641100FA704C /* ActivityListView.swift */,
 				ACE101A52BAABBBA00FA704C /* WorkoutsListView.swift */,
+				AC19A8D62BB3EF2F009C46B0 /* ActivityFormView.swift */,
 			);
 			path = "Acivity Views";
 			sourceTree = "<group>";
@@ -196,7 +202,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC19A8D52BB3ED7B009C46B0 /* ActivityFormModel.swift in Sources */,
 				ACE101A62BAABBBA00FA704C /* WorkoutsListView.swift in Sources */,
+				AC19A8D72BB3EF2F009C46B0 /* ActivityFormView.swift in Sources */,
 				ACE101962BA966AF00FA704C /* ModalType.swift in Sources */,
 				ACE101982BA9688800FA704C /* Color+Extension.swift in Sources */,
 				AC6A60F22BA0272200942F60 /* CalendarView.swift in Sources */,
