@@ -29,7 +29,7 @@ struct ActivityFormView: View {
                         Button {
                             selectingIcon.toggle()
                         } label: {
-                            Image(systemName: "model.icon.rawValue")
+                            Image(systemName: model.icon.rawValue)
                         }
                     } label: {
                         Text("Icon")

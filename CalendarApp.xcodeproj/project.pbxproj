@@ -14,6 +14,7 @@
 		AC6A60F42BA0272300942F60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6A60F32BA0272300942F60 /* Assets.xcassets */; };
 		AC6A60F72BA0272300942F60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6A60F62BA0272300942F60 /* Preview Assets.xcassets */; };
 		AC6A60FF2BA02A2C00942F60 /* Dete+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A60FE2BA02A2C00942F60 /* Dete+Extension.swift */; };
+		AC800CB92BB53BF30062E1CB /* ActivityIconSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC800CB82BB53BF30062E1CB /* ActivityIconSelectionView.swift */; };
 		ACE101862BA81EA700FA704C /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE101852BA81EA700FA704C /* Activity.swift */; };
 		ACE101882BA81F0400FA704C /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE101872BA81F0400FA704C /* Workout.swift */; };
 		ACE1018A2BA81F4F00FA704C /* ActivitySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE101892BA81F4F00FA704C /* ActivitySymbol.swift */; };
@@ -33,6 +34,7 @@
 		AC6A60F32BA0272300942F60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC6A60F62BA0272300942F60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC6A60FE2BA02A2C00942F60 /* Dete+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dete+Extension.swift"; sourceTree = "<group>"; };
+		AC800CB82BB53BF30062E1CB /* ActivityIconSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIconSelectionView.swift; sourceTree = "<group>"; };
 		ACE101852BA81EA700FA704C /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		ACE101872BA81F0400FA704C /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		ACE101892BA81F4F00FA704C /* ActivitySymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySymbol.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				ACE101932BA9641100FA704C /* ActivityListView.swift */,
 				ACE101A52BAABBBA00FA704C /* WorkoutsListView.swift */,
 				AC19A8D62BB3EF2F009C46B0 /* ActivityFormView.swift */,
+				AC800CB82BB53BF30062E1CB /* ActivityIconSelectionView.swift */,
 			);
 			path = "Acivity Views";
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				AC19A8D72BB3EF2F009C46B0 /* ActivityFormView.swift in Sources */,
 				ACE101962BA966AF00FA704C /* ModalType.swift in Sources */,
 				ACE101982BA9688800FA704C /* Color+Extension.swift in Sources */,
+				AC800CB92BB53BF30062E1CB /* ActivityIconSelectionView.swift in Sources */,
 				AC6A60F22BA0272200942F60 /* CalendarView.swift in Sources */,
 				ACE101912BA9638B00FA704C /* StartTab.swift in Sources */,
 				AC6A60F02BA0272200942F60 /* CalendarAppApp.swift in Sources */,
