@@ -32,11 +32,9 @@ enum ModalType: View, Identifiable, Equatable {
         case .updateActivity(let activity):
             ActivityFormView(model: ActivityFormModel(activity: activity))
         case .newWorkout(let activity):
-            AnyView(_fromValue: 2)
-            //WorkoutFormView(model: WorkoutFormModel(activity: activity))
+            WorkoutFormView(model: WorkoutFormModel(activity: activity))
         case .updateWorkout(let workout):
-            AnyView(_fromValue: 5)
-            //WorkoutFormView(model: WorkoutFormModel(workout: workout))
+            WorkoutFormView(model: WorkoutFormModel(workout: workout))
         }
     }
 }

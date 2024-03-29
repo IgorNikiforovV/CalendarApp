@@ -15,6 +15,8 @@
 		AC6A60F72BA0272300942F60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6A60F62BA0272300942F60 /* Preview Assets.xcassets */; };
 		AC6A60FF2BA02A2C00942F60 /* Dete+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A60FE2BA02A2C00942F60 /* Dete+Extension.swift */; };
 		AC800CB92BB53BF30062E1CB /* ActivityIconSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC800CB82BB53BF30062E1CB /* ActivityIconSelectionView.swift */; };
+		AC800CBD2BB693730062E1CB /* WorkoutFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC800CBC2BB693730062E1CB /* WorkoutFormModel.swift */; };
+		AC800CC02BB694B70062E1CB /* WorkoutFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC800CBF2BB694B70062E1CB /* WorkoutFormView.swift */; };
 		ACE101862BA81EA700FA704C /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE101852BA81EA700FA704C /* Activity.swift */; };
 		ACE101882BA81F0400FA704C /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE101872BA81F0400FA704C /* Workout.swift */; };
 		ACE1018A2BA81F4F00FA704C /* ActivitySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE101892BA81F4F00FA704C /* ActivitySymbol.swift */; };
@@ -35,6 +37,8 @@
 		AC6A60F62BA0272300942F60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC6A60FE2BA02A2C00942F60 /* Dete+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dete+Extension.swift"; sourceTree = "<group>"; };
 		AC800CB82BB53BF30062E1CB /* ActivityIconSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIconSelectionView.swift; sourceTree = "<group>"; };
+		AC800CBC2BB693730062E1CB /* WorkoutFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutFormModel.swift; sourceTree = "<group>"; };
+		AC800CBF2BB694B70062E1CB /* WorkoutFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutFormView.swift; sourceTree = "<group>"; };
 		ACE101852BA81EA700FA704C /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		ACE101872BA81F0400FA704C /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		ACE101892BA81F4F00FA704C /* ActivitySymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySymbol.swift; sourceTree = "<group>"; };
@@ -103,6 +107,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		AC800CBE2BB694920062E1CB /* Workout Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACE101A52BAABBBA00FA704C /* WorkoutsListView.swift */,
+				AC800CBF2BB694B70062E1CB /* WorkoutFormView.swift */,
+			);
+			path = "Workout Views";
+			sourceTree = "<group>";
+		};
 		ACE101842BA81E5700FA704C /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +124,7 @@
 				ACE101872BA81F0400FA704C /* Workout.swift */,
 				ACE101892BA81F4F00FA704C /* ActivitySymbol.swift */,
 				ACE101952BA966AF00FA704C /* ModalType.swift */,
+				AC800CBC2BB693730062E1CB /* WorkoutFormModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -118,6 +132,7 @@
 		ACE1018F2BA9637B00FA704C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AC800CBE2BB694920062E1CB /* Workout Views */,
 				ACE101922BA963FC00FA704C /* Acivity Views */,
 				ACE101902BA9638B00FA704C /* StartTab.swift */,
 			);
@@ -128,7 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				ACE101932BA9641100FA704C /* ActivityListView.swift */,
-				ACE101A52BAABBBA00FA704C /* WorkoutsListView.swift */,
 				AC19A8D62BB3EF2F009C46B0 /* ActivityFormView.swift */,
 				AC800CB82BB53BF30062E1CB /* ActivityIconSelectionView.swift */,
 			);
@@ -208,12 +222,14 @@
 				AC19A8D52BB3ED7B009C46B0 /* ActivityFormModel.swift in Sources */,
 				ACE101A62BAABBBA00FA704C /* WorkoutsListView.swift in Sources */,
 				AC19A8D72BB3EF2F009C46B0 /* ActivityFormView.swift in Sources */,
+				AC800CBD2BB693730062E1CB /* WorkoutFormModel.swift in Sources */,
 				ACE101962BA966AF00FA704C /* ModalType.swift in Sources */,
 				ACE101982BA9688800FA704C /* Color+Extension.swift in Sources */,
 				AC800CB92BB53BF30062E1CB /* ActivityIconSelectionView.swift in Sources */,
 				AC6A60F22BA0272200942F60 /* CalendarView.swift in Sources */,
 				ACE101912BA9638B00FA704C /* StartTab.swift in Sources */,
 				AC6A60F02BA0272200942F60 /* CalendarAppApp.swift in Sources */,
+				AC800CC02BB694B70062E1CB /* WorkoutFormView.swift in Sources */,
 				ACE101862BA81EA700FA704C /* Activity.swift in Sources */,
 				ACE101882BA81F0400FA704C /* Workout.swift in Sources */,
 				ACE101942BA9641100FA704C /* ActivityListView.swift in Sources */,
