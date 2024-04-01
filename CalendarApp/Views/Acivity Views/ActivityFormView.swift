@@ -46,7 +46,12 @@ struct ActivityFormView: View {
                             model.activity?.icon = model.icon.rawValue
                             model.activity?.hexColor = model.hexColor.toHex()!
                         } else {
-                            let newActivity = Activity(name: model.name, icon: model.icon, hexColor: model.hexColor.toHex()!)
+                            let newActivity = Activity(
+                                name: model.name,
+                                icon: model.icon,
+                                hexColor: model.hexColor.toHex()!
+                            )
+                            medalContext.insert(newActivity)
                         }
                         dismiss()
                     }
