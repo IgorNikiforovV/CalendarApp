@@ -11,8 +11,13 @@ import SwiftUI
 struct CalendarAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ActivityListView()
+            StartTab()
                 .modelContainer(for: Activity.self)
         }
     }
+}
+
+#Preview {
+    StartTab()
+        .modelContainer(for: Activity.self)
 }

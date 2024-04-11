@@ -10,15 +10,19 @@ import SwiftUI
 struct StartTab: View {
     var body: some View {
         TabView {
-//            ActivityListView() {
-//                .tabItem {
-//                    Label("Activities")
-//                }
-//            }
+            ActivityListView()
+                .tabItem {
+                    Label("Activities", systemImage: "figure.mixed.cardio")
+                }
+            Text("Calendar View")
+                .tabItem {
+                    Label("Calendar", systemImage: "calendar")
+                }
         }
     }
 }
 
 #Preview {
     StartTab()
+        .modelContainer(Activity.preview)
 }
