@@ -14,7 +14,7 @@ struct StartTab: View {
                 .tabItem {
                     Label("Activities", systemImage: "figure.mixed.cardio")
                 }
-            Text("Calendar View")
+            CalendarHeaderView()
                 .tabItem {
                     Label("Calendar", systemImage: "calendar")
                 }

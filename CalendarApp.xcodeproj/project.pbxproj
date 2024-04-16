@@ -14,6 +14,7 @@
 		AC6A60F42BA0272300942F60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6A60F32BA0272300942F60 /* Assets.xcassets */; };
 		AC6A60F72BA0272300942F60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6A60F62BA0272300942F60 /* Preview Assets.xcassets */; };
 		AC6A60FF2BA02A2C00942F60 /* Dete+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A60FE2BA02A2C00942F60 /* Dete+Extension.swift */; };
+		AC7140612BC9047E002FDCC6 /* CalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7140602BC9047E002FDCC6 /* CalendarHeaderView.swift */; };
 		AC800CB92BB53BF30062E1CB /* ActivityIconSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC800CB82BB53BF30062E1CB /* ActivityIconSelectionView.swift */; };
 		AC800CBD2BB693730062E1CB /* WorkoutFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC800CBC2BB693730062E1CB /* WorkoutFormModel.swift */; };
 		AC800CC02BB694B70062E1CB /* WorkoutFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC800CBF2BB694B70062E1CB /* WorkoutFormView.swift */; };
@@ -36,6 +37,7 @@
 		AC6A60F32BA0272300942F60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC6A60F62BA0272300942F60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC6A60FE2BA02A2C00942F60 /* Dete+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dete+Extension.swift"; sourceTree = "<group>"; };
+		AC7140602BC9047E002FDCC6 /* CalendarHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHeaderView.swift; sourceTree = "<group>"; };
 		AC800CB82BB53BF30062E1CB /* ActivityIconSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIconSelectionView.swift; sourceTree = "<group>"; };
 		AC800CBC2BB693730062E1CB /* WorkoutFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutFormModel.swift; sourceTree = "<group>"; };
 		AC800CBF2BB694B70062E1CB /* WorkoutFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutFormView.swift; sourceTree = "<group>"; };
@@ -79,11 +81,12 @@
 		AC6A60EE2BA0272200942F60 /* CalendarApp */ = {
 			isa = PBXGroup;
 			children = (
+				AC6A60EF2BA0272200942F60 /* CalendarAppApp.swift */,
+				ACE101902BA9638B00FA704C /* StartTab.swift */,
 				ACE1018F2BA9637B00FA704C /* Views */,
 				ACE101842BA81E5700FA704C /* Models */,
+				AC71405F2BC9039E002FDCC6 /* Calendar */,
 				AC6A60FD2BA02A1B00942F60 /* Extensions */,
-				AC6A60EF2BA0272200942F60 /* CalendarAppApp.swift */,
-				AC6A60F12BA0272200942F60 /* CalendarView.swift */,
 				AC6A60F32BA0272300942F60 /* Assets.xcassets */,
 				AC6A60F52BA0272300942F60 /* Preview Content */,
 			);
@@ -105,6 +108,15 @@
 				ACE101972BA9688800FA704C /* Color+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC71405F2BC9039E002FDCC6 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				AC6A60F12BA0272200942F60 /* CalendarView.swift */,
+				AC7140602BC9047E002FDCC6 /* CalendarHeaderView.swift */,
+			);
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 		AC800CBE2BB694920062E1CB /* Workout Views */ = {
@@ -134,7 +146,6 @@
 			children = (
 				AC800CBE2BB694920062E1CB /* Workout Views */,
 				ACE101922BA963FC00FA704C /* Acivity Views */,
-				ACE101902BA9638B00FA704C /* StartTab.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC19A8D52BB3ED7B009C46B0 /* ActivityFormModel.swift in Sources */,
+				AC7140612BC9047E002FDCC6 /* CalendarHeaderView.swift in Sources */,
 				ACE101A62BAABBBA00FA704C /* WorkoutsListView.swift in Sources */,
 				AC19A8D72BB3EF2F009C46B0 /* ActivityFormView.swift in Sources */,
 				AC800CBD2BB693730062E1CB /* WorkoutFormModel.swift in Sources */,

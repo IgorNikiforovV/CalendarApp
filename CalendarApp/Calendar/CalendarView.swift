@@ -6,23 +6,34 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct CalendarView: View {
-    @State private var color: Color = .blue
-    @State private var date: Date = .now
+    //@State private var color: Color = .blue
+    let date: Date
     let daysOfWeek = Date.capitalizedFirstLettersOfWeekdays
-
     let columns = Array(repeating: GridItem(.flexible()), count: 7)
     @State private var days: [Date] = []
+    let selectedActivity: Activity?
+    @Query private var workouts: [Workout]
+
+    init(date: Date, selectedActivity: Activity?) {
+        self.date = date
+        self.selectedActivity = selectedActivity
+        let endOfMonthAdjustment = Calendar.current.date(byAdding: .day, value: -1, to: date.endOfMonth)!
+        let predicate = #Predicate<Workout> { $0.date >= date.startOfMonth && $0.date <= endOfMonthAdjustment }
+        _workouts = Query(filter: predicate, sort: \Workout.date)
+    }
 
     var body: some View {
+        let color = selectedActivity == nil ? .blue : Color(hex: selectedActivity!.hexColor)!
         VStack {
-            LabeledContent("Colendar color") {
-                ColorPicker("", selection: $color, supportsOpacity: false)
-            }
-            LabeledContent("Date/Time") {
-                DatePicker("", selection: $date)
-            }
+//            LabeledContent("Colendar color") {
+//                ColorPicker("", selection: $color, supportsOpacity: false)
+//            }
+//            LabeledContent("Date/Time") {
+//                DatePicker("", selection: $date)
+//            }
             HStack {
                 ForEach(daysOfWeek.indices, id: \.self) { index in
                     Text(daysOfWeek[index])
@@ -64,5 +75,6 @@ struct CalendarView: View {
 }
 
 #Preview {
-    CalendarView()
+    CalendarView(date: .now, selectedActivity: nil)
+        .modelContainer(Activity.preview)
 }
