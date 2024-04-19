@@ -14,8 +14,9 @@ struct CalendarView: View {
     let daysOfWeek = Date.capitalizedFirstLettersOfWeekdays
     let columns = Array(repeating: GridItem(.flexible()), count: 7)
     @State private var days: [Date] = []
-    let selectedActivity: Activity?
+    var selectedActivity: Activity?
     @Query private var workouts: [Workout]
+    @State private var counts = [Int: Int]()
 
     init(date: Date, selectedActivity: Activity?) {
         self.date = date
@@ -37,7 +38,7 @@ struct CalendarView: View {
             HStack {
                 ForEach(daysOfWeek.indices, id: \.self) { index in
                     Text(daysOfWeek[index])
-                        .fontWeight(.bold)
+                        .fontWeight(.black )
                         .foregroundStyle(color)
                         .frame(maxWidth: .infinity)
                 }
@@ -48,7 +49,7 @@ struct CalendarView: View {
                     if day.monthInt != date.monthInt {
                         Text("")
                     } else {
-                        Text("\(day.formatted(.dateTime.day()))")
+                        Text(day.formatted(.dateTime.day()))
                             .fontWeight(.bold)
                             .foregroundStyle(.secondary)
                             .frame(maxWidth: .infinity, minHeight: 40)
@@ -56,9 +57,21 @@ struct CalendarView: View {
                                 Circle()
                                     .foregroundStyle(
                                         Date.now.startOfDay == day.startOfDay
-                                        ? .red.opacity(0.3) : color.opacity(0.3)
+                                        ? .red.opacity(counts[day.dayInt] != nil ? 0.8 : 0.3) : color.opacity(counts[day.dayInt] != nil ? 0.8 : 0.3)
 
                                     )
+                                    .overlay(alignment: .bottomTrailing) {
+                                        if let count = counts[day.dayInt] {
+                                            Image(systemName: count <= 50 ? "\(count).circle.fill" : "plus.circle.fill")
+                                                .foregroundColor(.secondary)
+                                                .imageScale(.medium)
+                                                .background(
+                                                    Color(.systemBackground)
+                                                        .clipShape(.circle)
+                                                )
+                                                .offset(x: 5, y: 5)
+                                        }
+                                    }
                             }
                     }
                 }
@@ -67,10 +80,24 @@ struct CalendarView: View {
         .padding()
         .onAppear {
             days = date.calendarDisplayDays
+            setupCounts()
         }
         .onChange(of: date) {
             days = date.calendarDisplayDays
+            setupCounts()
         }
+        .onChange(of: selectedActivity) {
+            setupCounts()
+        }
+    }
+
+    func setupCounts() {
+        var filteredWorkouts = workouts
+        if let selectedActivity {
+            filteredWorkouts = workouts.filter { $0.activity == selectedActivity }
+        }
+        let mappedItems = filteredWorkouts.map { ($0.date.dayInt, 1) }
+        counts = Dictionary(mappedItems, uniquingKeysWith: +)
     }
 }
 
